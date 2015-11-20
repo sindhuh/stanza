@@ -1,0 +1,37 @@
+<!-- Landing container that scrolls -->
+<div class="landing-container">
+
+  <!-- Banner -->
+  <div class="banner" style="background: url('http://getlatestwallpapers.com/wp-content/uploads/2013/12/mountain-roads-hd-wallpapers-2014.jpg')">
+
+  	<!-- Overlay Over background image -->
+    <div class="overlay"></div>
+
+    <!-- Banner content -->
+    <div class="banner-content">
+      <p class="heading">STANZA CUSTOM THEME CHALLENGE</p>
+      <div class="line"></div>
+
+      <!-- Input fields and submit button -->
+      <div class="colors-inputs">
+      	<p>COLORS</p>
+      	<input ng-model="primaryColor" placeholder="Primary">
+      	<input ng-model="secondaryColor" placeholder="Secondary">
+      	<button ng-click="setTheme()">SET THEME!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- The tiles container -->
+  <div class="landing-content">
+
+  	<!-- Individual tile -->
+    <div ng-repeat="tile in tiles" class="tile">
+      <div class="image" style="background: url('{{tile.image}}')">
+        <div class="overlay"></div>
+      </div>
+      <p class="title">{{tile.title}}</p>
+    </div>
+  </div>
+  
+</div>

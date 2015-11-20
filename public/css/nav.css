@@ -1,0 +1,15 @@
+.nav-container {
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index: 1;
+}
+
+.nav-container > img {
+	position: absolute;
+	top:0;
+	left:0;
+	margin:10px;
+	width:40px;
+}
